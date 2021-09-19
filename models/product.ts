@@ -23,7 +23,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
   Product.init({
     id:{
       type: DataTypes.UUID,
-      autoIncrement: DataTypes.UUIDV4,
+      defaultValue: DataTypes.UUIDV4,
       allowNull:false,
       primaryKey: true,
       
